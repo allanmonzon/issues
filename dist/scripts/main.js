@@ -1,3 +1,10 @@
+var token = "f3411426c477dccb4f8cb2f41835375243ca8186";
+
+$.ajaxSetup ({
+  	headers: {
+       "Authorization": "token " + token
+	}
+});
 
 function renderTemplate(templateId, location, model) {
     var templateString = $(templateId).text();
